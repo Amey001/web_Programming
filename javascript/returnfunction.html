@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function name(fname="nano",lname="technology")
+        {
+            var a=fname + " " + lname;
+
+            return a;
+        }
+
+        var a=name("Ram","Sham");
+        document.write("Name is :: "+a + "<br>");
+
+        // add two numbers in a function and return value to calling area 
+
+        function add(a,b)
+        {
+            return a+b;
+        }
+        var x=10;
+        var y=20;
+        
+        document.write("Addition of x and y is ::"+add(x,y)+ "<br>");
+
+        // sum of marks of five subjects 
+        var math=60;
+        var eng=80;
+        var phy=60;
+        var chem=70;
+        var bio=90;
+
+        function sum(a,b,c,d,e)
+        {
+            var total=a+b+c+d+e;
+            return total;
+        }
+        var total= sum(math,eng,phy,chem,bio);
+        document.write(" Sum of all five subjects are ::"+total+"<br  >");
+
+        function percent(tt)
+        {
+            return tt/500*100;
+        }
+       
+        document.write("percentage is ::"+percent(total)+"%"+"<br>");
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

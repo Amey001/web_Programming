@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<style>
+
+    body{
+       display: flex;
+       height: 100vh;
+       
+       margin: 0;
+       padding: 0;
+    }
+    .s1,.s2{
+        display: flex;
+    }
+    @media only screen and (max-width:500px){
+        body{
+            flex-direction: column;
+        }
+    }
+    
+    .box1{
+        background-color: brown;
+        height: 100px;
+        width: 300px;
+        margin: 10px;
+        color: antiquewhite;
+        font-size: xx-large;
+    }
+    .box2{
+        background-color: rgb(15, 190, 15);
+        height: 100px;
+        width: 300px;
+        margin: 10px;
+        color: antiquewhite;
+        font-size: xx-large;
+
+    }
+    .box3{
+        background-color: rgb(236, 217, 11);
+        height: 100px;
+        width: 300px;
+        margin: 10px;
+        color: black;
+        font-size: xx-large;
+
+    }
+    .box4{
+        background-color: rgb(10, 82, 177);
+        height: 100px;
+        width: 300px;
+        margin: 10px;
+        color: antiquewhite;
+        font-size: xx-large;
+
+    }
+</style>
+<body>
+    <div class="s1">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+
+    </div>
+    <div class="s2">
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        
+    </div>
+
+       
+    
+
+    </body>
+</html>

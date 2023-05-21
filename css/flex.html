@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            border:2px solid black; 
+            width: 600px;
+            /* height: 100px; */
+            margin: 10px auto 0;
+            padding: 0px;
+            display:flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            /* justify-content:start; */
+            justify-content: space-around;
+        }
+        .cnt{
+            border:2px solid black;
+            width: 600px;
+            margin: 20px auto 0;
+            display: flex;                  /*takes the elements in horizontal direction*/
+            padding: 0px;
+            flex-direction: row;            /*takes the elements in a row*/
+            justify-content: space-between;/* takes the elements at different positions*/ 
+        }
+        .c{
+            border:3px solid black;
+            width: 600px;
+            height:500px;
+            margin:10px auto 0px;
+            padding:5px;
+            display: flex;                  
+            flex-direction: row;            
+            justify-content:center;             /*very important property as it takes x axis in row and y axis in column*/
+            align-items:center;                /*very important property as it takes y axis in row and x axis in columns*/ 
+            
+
+        }
+        .one{
+          
+            background-color:rgb(218, 143, 4);
+        }
+        .two{
+            
+            background-color: rgb(205, 200, 200);
+        }
+        .three{
+          
+            background-color: green;
+        
+        }
+        .four{
+            
+            background-color: red;
+        }
+        .five{
+          
+            background-color:rgb(152, 2, 152);
+        
+        }
+        .six{
+            
+            background-color: grey;
+        }
+        .hey{
+            background-color:aqua;
+        }
+        .hii{
+            background-color: cornflowerblue;
+        }
+        .new{
+            background-color: darkgrey;
+        }
+        .items{
+            border:2px solid black;
+            padding:15px;
+            text-align: center;
+            margin: 0px;
+        }
+        .itm{
+            text-align: center;
+            padding: 15px;
+            margin: 0;
+            border: 2px solid black;
+            
+        }
+        .item{
+            border:2px solid black;
+            margin:2px;
+            padding:15px;
+            height:30px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="items one">One</div>
+    <div class="items two">Two</div>
+    <div class="items three">Three</div>
+    
+</div>
+<div class="cnt">
+    <div class="itm four">Four</div>
+    <div class="itm five">Five</div>
+    <div class="itm six">Six</div>
+</div>
+<div class="c">
+    <div class="item hey"> hey </div>
+    <div class="item hii"> hii </div>
+    <div class="item new"> new </div>
+</div>
+</body>
+</html>

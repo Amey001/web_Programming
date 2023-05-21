@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//  ************ While Loop **********//
+
+document.write("<b> ** While Loop **</b>")
+    var a=1;
+    document.write("<ul>");
+    while(a<=10)
+    {
+        document.write("<li> Welcome to<b> India</b></li>");
+        a=a+1;
+    }
+    document.write("</ul>");
+
+    var b=10;
+    document.write("<ol>");
+    while(b>=1)
+    {
+        document.write("<b> <li> Explore India..</b></li>");
+        b=b-1;
+    }
+    document.write("</ol>");
+
+    // ***************  Do-While Loop ***********//
+
+    var a=1;
+    document.write("<b>&nbsp &nbsp ** Do-While Loop</b>");
+    document.write("<ul>");
+    do{
+        document.write("<li><b>Yahoo Baba....</b></li>");
+        a++;
+    }while(a<=10)
+    document.write("</ul>");
+
+    // table of number num
+    document.write("<b>Printing the table of num :</b><br>");
+    var num=3;
+    var i=1;
+    do{
+        document.write("<b>"+ num +" * "+ i +" :: " +(num*i)+"<br>"+"</b>");
+        i++;
+    }while(i<=10)
+
+
+    //  ****** For Loop ******//
+    document.write("<b><br>** For loop **</b>");
+    for(var i=1;i<=10;i++)          //initilization condition and declaration in one line 
+    {
+        document.write("<br>"+i+")<b> Error !!!</b>");
+    } 
+
+    document.write("<b><br><br> ** Break And Continue ** </b><br>");
+    for(var i=1;i<=10;i++)
+    {
+        if(i==3)
+        {
+            document.write("<b><i>HEY :</b></i> "+ i+"<br>");
+            continue;             //it will continue from 3
+            // break;                   //it will break after 3
+        }
+        document.write("<b>Number</b> : "+ i+ "<br>")
+        
+    }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

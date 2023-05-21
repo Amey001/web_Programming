@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width:100%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 130px;
+            
+            /*  border:2px solid black; */
+            box-shadow: 0px 5px 20px rgb(63, 58, 58);
+            overflow: hidden;
+        }
+        .logo{
+            width: 20%;
+        }
+        nav{
+            width:80%;
+        }
+        ul
+        {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            list-style-type: none;
+            margin: 20px;
+            font-size: larger;
+           
+        }
+        ul li{
+            margin-left: 20px;
+            text-shadow: 2px 2px 6px grey;
+            display: flex;
+            justify-content: end;                    
+        }
+        ul li::before{
+            content: '';
+            width: 5px;
+            height:0%;
+            border-radius: 5px;
+            margin-right: 5px;
+            background:linear-gradient(10deg,blue,skyblue);
+            transition: all .5s ease-in-out;
+        }
+        ul li:hover::before{
+        
+            height:100%;
+        }
+
+        ul li a{
+            text-transform: uppercase;
+        }
+        #btn{
+            color:white;
+            background: linear-gradient(150deg,rgb(32, 32, 184),rgb(25, 148, 197));
+            padding:5px 10px;
+            font-size: 15px;
+            border:2px solid transparent;
+            border-radius: 15px;
+            transition: all .5s ease-in-out;
+        }
+
+        #btn:hover{
+            background: linear-gradient(150deg,rgb(184, 32, 32),rgb(201, 201, 17));
+            border:black;
+            color:black;
+            box-shadow: 2px 3px 4px black;
+        }
+
+
+        img{
+            margin: 50px;
+            height: 50px;
+            border-radius: 20px;
+        }
+       main{
+        display: flex;
+        margin-top: 30px;
+        margin-left: 40px;
+       }
+       .left{
+        width:50%;
+       }
+       .right{
+        height: 200px;
+        padding: 240px;
+        width:50%;
+       }
+       h2{
+        color:blue;
+        font-size: 50px;
+        text-shadow: 4px 3px 6px skyblue;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./Nike-Graphic-Design-Principle.jpg" alt="logo"></div>
+        <nav>
+            <ul>
+                <li><a href=""></a> Home</li>
+                <li><a href=""></a>Services</li>
+                <li><a href=""></a>About</li>
+                <li><a href=""></a>FAQs</li>
+                <li><button id="btn">SignUp</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="left">
+            <h1>Welcome To</h1>
+            <h2>NIKE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi praesentium sit, asperiores exercitationem ipsam incidunt, tenetur autem quas quia repudiandae odio quo quisquam at fuga earum rem veritatis officia labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nesciunt, itaque sequi eum unde amet rerum adipisci mollitia non quasi ut quo est at corporis ad qui vero similique dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat cupiditate ullam magni ut magnam doloremque enim ab laborum earum. Assumenda mollitia optio ratione quos quibusdam adipisci nesciunt, veniam reprehenderit maxime!</p>
+            <button id="btn1">Learn More</button>
+        </div>
+        <div class="right">
+            <img src="./fsd.png" alt="" class="src">
+        </div>
+    </main>
+    
+</body>
+</html>

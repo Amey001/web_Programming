@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Audiowide", sans-serif;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 110px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+
+    }
+
+    .logo {
+        width: 25%;
+        margin-left: 80px;
+    }
+
+    nav {
+        width: 75%;
+        text-align: end;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        text-align: end;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    ul li {
+
+        /* width: 120px; */
+        height: 25px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 2px;
+
+    }
+    ul li a{
+        color: rgb(42, 40, 40);
+        text-transform: uppercase;
+    }
+
+    ul li::before { 
+        content: '';
+        width: 5px;
+        height: 0%;
+        margin-right: 5px;
+        border-radius: 5px;
+        background: linear-gradient(rgb(0, 17, 255),rgb(0, 234, 255));
+        transition: all .5s ease-in-out;
+     } 
+
+    a {
+        text-decoration: none;
+    }
+
+    /* ul li::after {
+        content: ''; 
+        display: block;
+        width: 0%;
+        height: 5px;
+        border-radius: 5px;
+        background: linear-gradient(90deg, rgb(15, 11, 154, 5), rgb(69, 0, 115, 5));
+        transition: all .8s ease;
+
+    /* } */
+
+    
+
+    ul li:hover::before {
+        height: 100%;
+    }
+    .signup-btn{
+        background-color: rgb(53, 52, 52);
+        color: aliceblue;
+        padding: 8px 8px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: 2px solid transparent;
+        transition: all .5s ease-in-out;
+    }
+    .signup-btn:hover{
+        background-color: aliceblue;
+        color: rgb(53, 52, 52);
+        border: 2px solid rgb(53, 52, 52);
+    }
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 100px;
+    }
+
+    .content-left {
+        width: 100%;
+        flex: 1;
+    }
+    .content-left h1{
+        color: blue;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+    }
+    .content-left p{
+        margin-top: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .content-left button{
+        margin-top: 20px;
+        background:linear-gradient(90deg,rgb(0, 17, 255),rgb(0, 234, 255));
+        border: none;
+        outline: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        color: aliceblue;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+    .content-right {
+        flex: 1;
+    }
+
+    .content-right img {
+        width: 350px;
+        margin-left: 40%;
+    }
+    img{
+        position: relative;
+        
+    }
+    .logo span{
+        width: 100%;
+        height: 14px;
+        background-color:white;
+        position: absolute;
+        top: 95px;
+        right: 0;
+        z-index: 1;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <span></span>
+            <img src="./image1/nike-logo-13.jpg" alt="logo" width="150px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href=""> Home</a></li>
+                <li><a href=""> services</a></li>
+                <li><a href=""> About</a></li>
+                <li><a href=""> Faq</a></li>
+                <li><a href="#" class="signup-btn"> Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-left">
+            <h2>Welcome To</h2>
+            <h1>Nike</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam architecto non ab esse reprehenderit? Id
+                sapiente sint ducimus voluptatum dolorum illum aliquid expedita repudiandae aut consequuntur, suscipit
+                soluta officia facere aperiam sit quaerat eaque atque et! Nostrum explicabo recusandae, rerum odit
+                laudantium doloremque accusamus ipsa labore. Facere qui ab consequatur.</p>
+            <button id="cta">Learn More</button>
+        </div>
+        <div class="content-right">
+            <img src="./image1/website-speed-optimisation-vector-illustration-5de242cf65d70.png" alt=""
+                class="hero-img">
+        </div>
+    </main>
+
+<script>
+    let btn=document.getElementById("cta");
+    btn.addEventListener('click',()=>{
+        alert("Hello From NIKE..!");
+    })
+</script>
+</body>
+
+</html>

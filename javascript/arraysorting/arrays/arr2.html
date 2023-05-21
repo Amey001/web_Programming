@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = new Array(10,"harry","Ram",null,true);
+        document.write("<ul>");
+        for(var a=0;a<=4;a++){
+            document.write("<li>"+arr[a]+ " "+" </li>");
+        }
+        document.write("</ul>");
+
+        var arr1= new Array();
+        arr1[0]=10;
+        arr1[1]="code with";
+        arr1[2]="Harry"; 
+        arr1[3]=true;
+        arr1[4]=null;
+        document.write("<ul>");
+        for(var a=0;a<=3;a++)
+        {
+            document.write("<li>"+arr1[a]+ " "+ "</li>");
+        }
+        document.write("</ul>");
+
+        document.write("Getting array Elements from User !!!");
+        var ary=new Array(3);
+            for(var a=0;a<=3;a++)
+            {
+                ary[a]=prompt("Enter the value :: ");
+            }
+        
+        document.write("<ul>");
+            for(var a=0;a<=3;a++)
+            {
+                document.write("<li>"+ ary[a]+"</li>");
+            }
+        document.write("</ul>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

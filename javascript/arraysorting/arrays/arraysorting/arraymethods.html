@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Sort and Reverse
+        document.write("<b>********** Sort And Reverse ***</b><br><br>")
+        var a=["Mujjamil","Amey","Harshad","Vaibhav","Tejas","Mayur"];
+        document.write("<b>Array Elements are ::</b>"+a+" "+"<br><br>");
+        a.sort();
+        document.write("<b>Array Elements after Sorting are ::</b>"+a+"<br><br>");
+
+        a.reverse();
+        document.write("<b>Array elements after Reversing are ::</b>"+a+"<br><br>");
+
+        // Push and Pop Methods
+        document.write("******** <b>Push And Pop</b> ***<br><br>");
+        var b=["Code","With","Harry"];
+        document.write("<b>Array Elements Are :: </b>"+b+" "+"<br><br>");
+        b.pop();
+        document.write("<b>Array Elements Are :: </b>"+b+" "+"<br><br>");   //popped Harry
+        b.push("Yahoo Baba");
+        document.write("<b>Array Elements Are :: </b>"+b+" "+"<br><br>");   //Pushed Yahoo Baba
+        
+        // Shift and Unshift ::-Basically it pushs and pops 0th element of array
+        document.write("<b> ********* Shift and Unshift</b> ***<br><br>");
+        var a=["Sanjay","Kiran","Vaibhav"];
+        document.write("<b>Array element are </b>"+a+" "+ "<br><br>");
+        a.shift();
+        document.write("<b>Array elements after shift method are:: </b>"+a+" "+ "<br><br>");
+        a.unshift("Rahul");
+        document.write("<b>Array elements after unshift method are ::</b>"+a+" "+ "<br><br>");
+        
+
+        // Concat and join 
+        document.write("<b> ********* Concat and join</b> ***<br><br>");
+        var a=["Sanjay","Aman","Rehman"];
+        var b=a.concat("Rahul","Karan");                //by 1st method
+        document.write("<b>Array element are </b>"+b+" "+ "<br><br>");
+        var c=["Mujjamil","Harshad"];
+        var d=["Mayur","Tejas"];
+        var e=a.concat(c,d);
+        document.write("<b>Array Elements After Concat are::</b> "+e+ " " + "<br><br>");
+        
+        var f=e.join(" /");
+        document.write("<b>Change in Array Elements After join method is::</b> "+f+ " " + "<br><br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

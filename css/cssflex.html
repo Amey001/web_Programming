@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            overflow-x: hidden;
+            
+        }
+        nav{
+            height:100px;
+            width:auto;
+            background-color: grey;
+            margin:3px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+        .circle{
+            background-color: white;
+            border:3px solid white;
+            height: 70px;
+            width:70px;
+            border-radius: 100px;
+            margin:20px;
+            border:2px dotted black;
+           
+        }
+
+        .b1{
+            height:17px;
+            width:80px;
+            margin-right: 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 9px black;
+            transition: all .5s linear;
+        }
+        .b1:hover{
+            background: linear-gradient(150deg,red,yellow);
+        }
+
+        .bar1{
+            height: 40px;
+            width: 80vh;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 40%;
+            background-color: white ;
+        }
+        .br1{
+            margin-top: 80px;
+            height: 16px;
+            width: 40vh;
+
+        }
+        .br2{
+            height:13px;
+            width:80vh;
+            margin-left: 55vh;
+        }
+        .br3{
+            height:10px;
+            width:80vh;
+            margin-left: 55vh;
+         
+        }
+        .br4{
+            height:25px;
+            width:30vh;
+            margin-left: 650px;
+            border-radius: 40px;
+            
+        }
+        .bottom{
+            height:300px;
+            /* width:100vh; */
+            margin-top: 70px;
+            margin-left: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+        }
+        .D{
+            width:400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:2px solid black;
+            height:250px;
+            border-radius: 20px;
+            background-color: white;
+            
+        }
+
+        .D1{
+            width:400px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:2px solid black;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .b2{
+            width:200px;
+            height: 20px;
+            margin-top: 40px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 5px  grey;
+            transition: all 1s linear;
+            
+            
+        }
+        .b2:hover{
+            
+            background:linear-gradient(rgb(55, 52, 52),rgb(235, 221, 221));
+        }
+        .g{
+            width: 50px;
+            height: 50px;
+            border:2px solid black;
+            margin-bottom: 120px;
+            position:absolute;
+            border-radius: 30px;
+            background-color: red;
+            transition: all .5s ease-in-out;                        
+        }
+        .g:hover{
+            background-color: blue;
+            box-shadow: 4px 4px 5px black;
+        }
+        .g1{
+            
+            height:22px;
+            width: 22px;
+            border-left: 2px solid black;
+            border-top:2px solid black;
+            transform: rotate(-133deg);
+            position: absolute;
+            left:13px;
+            top:7px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="circle"></div>
+        <div>
+            <button class="b1"></button>
+            <button class="b1"></button>
+            <button class="b1"></button>
+        </div>
+    </nav>
+    <div class="bar1 br1"></div>
+    <div class="bar1 br2"></div>
+    <div class="bar1 br3"></div>
+    <div class="bar1 br4"></div>
+
+    <div class="bottom">
+        <div class="D">
+            <button class="b2"></button>
+        </div>
+        <div class="D1">
+            <div class="g"><div class="g1"></div></div>
+            <button class="b2"></button>
+        </div>
+        <div class="D">
+            <button class="b2"></button>
+        </div>
+    </div>
+</body>
+</html>

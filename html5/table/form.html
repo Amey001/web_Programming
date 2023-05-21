@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" align="center">
+        <label for="name"><b>Name</b>&nbsp</label><input type="text" name="fname" placeholder="enter your name"/><br/><br/>
+        <label for="passwrod"><b>Password</b> &nbsp</label><input type="password" placeholder="password"/><br/><br/>
+        <label><b>Gender</b></label>
+            <input type="radio" name="gender" id="Male"/><label for="Male">Male</label>
+            <input type="radio" name="gender" id="Female"/><label for="Female">Female</label><br><br>
+        <label for="hobbies"><b>Hobbies</b></label>
+            <input type="checkbox" name="hobbies" id="Music"/><label for="Music">Music</label>
+            <input type="checkbox" name="hobbies" id="Football"/><label for="Football">Football</label>  <br><br> 
+        <label for="country"><b>Country</b></label>
+            <select name="country" id="country">
+                <option value="">India</option>
+                <option value="">America</option>
+                <option value="">Austrilia</option>
+            </select><br><br>
+        
+        <label for="cars"><b>Cars</b></label>
+            <select name="cars" id="">
+                <optgroup label="Toyota">
+                    <option value="innova">Innova</option>
+                    <option value="innova">Fortuner</option>
+                    <option value="innova">Etios</option>
+                </optgroup>
+                <optgroup label="Renault">
+                    <option value="">Kwid</option>
+                    <option value="">Duster</option>
+                    <option value="">Captur</option>
+                </optgroup>
+
+            </select>  <br><br>  
+
+            <label for=""><b>Cars </b></label><input list="cars">
+            <datalist id="cars">
+                <option value="Innova"></option>
+                <option value="Kwid"></option>
+                <option value="Honda City"></option>
+            </datalist>
+            <br><br>
+        <label for="message"><b>Message</b></label>&nbsp<textarea cols="10" rows="5"></textarea> <br><br>  
+        <label for=""><b>Upload File</b></label>
+            <input type="file" accept="" name=""/>
+        
+        <br><br> 
+            <input type="Submit"/>
+            <input type="submit" value="Save"/>
+            <input type="button" value="click">
+            <input type="reset">
+    </form>
+</body>
+</html>

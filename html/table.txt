@@ -1,0 +1,13 @@
+<table> Tag Properties:
+1.border=""
+2.align=""		//right left center
+3.width=""
+4.cellpadding=""
+5.cellspacing=""
+6.bgcolor=""
+
+
+<tr>
+<td> :-
+	valign-to alig left and right
+ 	bgcolor-to color a td or tr
